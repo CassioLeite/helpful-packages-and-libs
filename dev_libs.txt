@@ -1,0 +1,32 @@
+##### Laravel IDE Helper ##### 
+
+# Link
+https://github.com/barryvdh/laravel-ide-helper
+
+# Install
+composer require barryvdh/laravel-ide-helper --dev
+
+# After install run: 
+php artisan ide-helper:generate #phpDoc generation for Laravel Facades
+php artisan ide-helper:models   #phpDocs for models
+
+
+##### Laravel Code Validator #####
+
+# Link
+https://github.com/codeedu/code_validator
+
+# Install
+composer require codeedu/code_validator 
+
+# After install go to AppServiceProvider.php and inside the boot() method use de following code:
+
+# Imports
+use Code\Validator\Cnpj;
+use Code\Validator\Cpf;
+
+\Validator::extend('document_number', function($attribute, $value, $parameters, $validator){
+    $documentValidator = $parameters[0] == 'cpf' ? new Cpf() : new Cnpj();
+    return $documentValidator->isValid($value);
+});
+
