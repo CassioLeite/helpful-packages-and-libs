@@ -1,5 +1,7 @@
 # Helpful Packages and Libs
->A repository created to share helpful packages, libraries, extentions and plugins for Development.  
+A repository created to share helpful packages, libraries, extensions and plugins for Development. 
+  * I understand the differences between packages, libraries, extensions and plugins.
+  * I will treat all new sources in this repository as "packages" to keep it cleaner as possible, so please bear with me. 
 
 ## Laravel
 
@@ -18,3 +20,9 @@
 |   Package   |  Description  | Credits
 | :---        | :---          | :---
 | [Jquery Toast Plugin](https://github.com/kamranahmedse/jquery-toast-plugin)|In this repository, you can show different types of toasts i.e. informational, warning, errors and success.|[*kamranahmedse*](https://github.com/kamranahmedse)|
+
+## Mail
+
+|   Package   |  Description  | Credits
+| :---        | :---          | :---
+| [Mailtrap](https://mailtrap.io)|Safe Email Testing for Staging & Development Inspect and debug your email samples before delivering them to your customers.|[*mailtrap*](https://mailtrap.io)|
